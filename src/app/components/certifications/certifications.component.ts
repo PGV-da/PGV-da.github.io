@@ -88,7 +88,6 @@ interface Certification {
                     [src]="cert.logoImage" 
                     [alt]="cert.issuer + ' logo'"
                     class="w-12 h-12 object-contain rounded"
-                    (error)="onLogoError($event, cert)"
                   />
                   <span *ngIf="!cert.logoImage" class="text-3xl">{{ cert.logo }}</span>
                 </div>

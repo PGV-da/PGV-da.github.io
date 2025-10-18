@@ -41,7 +41,7 @@ interface Project {
                 [src]="project.image" 
                 [alt]="project.title"
                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                (error)="onImageError($event)"
+                onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop'"
               />
               <div class="absolute top-4 right-4 px-3 py-1 bg-white rounded-full text-xs font-semibold text-primary shadow-md">
                 {{ project.category }}
