@@ -70,6 +70,16 @@ interface Skill {
           <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
             <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-indigo-600">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72A7.963 7.963 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Bot Development</h3>
+            <p class="text-gray-600">Telegram Bots using Python and Aiogram for automation</p>
+          </div>
+
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-indigo-600">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
             </div>
@@ -95,10 +105,10 @@ interface Skill {
 export class SkillsComponent {
   skills: Skill[] = [
     // Languages
-    { name: 'Python', level: 90, icon: '�', category: 'Languages' },
+    { name: 'Python', level: 90, icon: '🐍', category: 'Languages' },
     { name: 'Dart', level: 92, icon: '🎯', category: 'Languages' },
     { name: 'JavaScript', level: 85, icon: '⚡', category: 'Languages' },
-    { name: 'TypeScript', level: 87, icon: '�', category: 'Languages' },
+    { name: 'TypeScript', level: 87, icon: '#️⃣', category: 'Languages' },
     
     // Frameworks
     { name: 'Flutter', level: 93, icon: '📱', category: 'Frameworks' },
@@ -117,7 +127,7 @@ export class SkillsComponent {
     
     // Other Skills
     { name: 'Machine Learning', level: 80, icon: '🤖', category: 'Other' },
-    { name: 'Agile Development', level: 85, icon: '�', category: 'Other' },
-    { name: 'Problem Solving', level: 92, icon: '�', category: 'Other' }
+    { name: 'Agile Development', level: 85, icon: '🛠️', category: 'Other' },
+    { name: 'Problem Solving', level: 92, icon: '🎯', category: 'Other' }
   ];
 }

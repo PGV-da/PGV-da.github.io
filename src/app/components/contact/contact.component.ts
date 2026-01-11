@@ -103,7 +103,7 @@ import { CommonModule } from '@angular/common';
       <div class="container mx-auto max-w-6xl">
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p class="text-center md:text-left">
-            © 2025 Vikram
+            © 2026 Vikram
           </p>
           <div class="flex space-x-6">
             <a href="#home" class="hover:text-accent transition-colors">Home</a>

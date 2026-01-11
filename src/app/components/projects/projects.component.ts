@@ -113,6 +113,14 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
+      title: 'Reboundly [Freelance Project]',
+      description: 'Reboundly lets you chat anonymously with random users worldwide. Share your thoughts, get support, or just have fun.',
+      tech: ['Python', 'MongoDB', 'Telegram Bot'],
+      image: 'assets/images/projects/reboundly.png',
+      demo: 'https://telegram.dog/Reboundly_bot',
+      category: 'Bot'
+    },
+    {
       title: 'DailyLoop',
       description: 'A productivity and habit tracker mobile app that helps users manage tasks and build habits with reminders, task analytics, and performance charts. Published on Google Play Store.',
       tech: ['Flutter', 'Dart', 'Firebase'],

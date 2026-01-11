@@ -45,5 +45,5 @@ import { ContactComponent } from './components/contact/contact.component';
   `]
 })
 export class AppComponent {
-  title = 'Vikram Portfolio';
+  title = 'Vikramortfolio';
 }

@@ -37,15 +37,15 @@ import { CommonModule } from '@angular/common';
             </h3>
             
             <p class="text-lg text-gray-600 leading-relaxed">
-              I'm Vikram P, an enthusiastic Software Developer with hands-on experience in building 
+              I'm Vikram, an enthusiastic Software Developer with hands-on experience in building 
               mobile, web, and AI-driven applications. I specialize in Flutter, Python, Firebase, 
               Flask, and Angular, with a strong foundation in databases, REST APIs, and problem-solving.
             </p>
 
             <p class="text-lg text-gray-600 leading-relaxed">
               With published apps on Google Play Store and open-source contributions on pub.dev, 
-              I'm passionate about delivering impactful software solutions. Currently pursuing my 
-              MCA at Anna University, Chennai, while actively working on innovative projects that 
+              I'm passionate about delivering impactful software solutions. I'm Graduated my 
+              MCA at Anna University, Chennai and actively working on innovative projects that 
               combine technology with real-world impact.
             </p>
 
