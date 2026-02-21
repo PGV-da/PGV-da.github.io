@@ -18,6 +18,10 @@ export const routes: Routes = [
     loadComponent: () => import('./components/myapps/flap3/privacy-policy.component').then(m => m.Flap3PrivacyPolicyComponent)
   },
   {
+    path: 'myapps/flap3/account-deletion',
+    loadComponent: () => import('./components/myapps/flap3/account-deletion.component').then(m => m.Flap3AccountDeletionComponent)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
