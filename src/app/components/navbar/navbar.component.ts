@@ -1,10 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
     <nav 
       class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
@@ -28,6 +29,12 @@ import { CommonModule } from '@angular/common';
               [class.active]="activeSection === item.link"
             >
               {{ item.label }}
+            </a>
+            <a 
+              routerLink="/myapps"
+              class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium"
+            >
+              My Apps
             </a>
           </div>
 
@@ -72,6 +79,13 @@ import { CommonModule } from '@angular/common';
             (click)="closeMobileMenu()"
           >
             {{ item.label }}
+          </a>
+          <a 
+            routerLink="/myapps"
+            class="block py-2 text-gray-700 hover:text-primary transition-colors duration-300"
+            (click)="closeMobileMenu()"
+          >
+            My Apps
           </a>
         </div>
       </div>
