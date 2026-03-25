@@ -51,14 +51,16 @@ import { RouterLink } from '@angular/router';
                   ☁️ Cloud Sync
                 </span>
               </div>
-              <a 
-                href="#"
+              <a
+                href="https://play.google.com/store/apps/details?id=com.vikramji283.flap_3"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="inline-flex items-center space-x-2 px-8 py-3 bg-white text-primary rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                 </svg>
-                <span>Coming Soon on Play Store</span>
+                <span>Get it on Play Store</span>
               </a>
             </div>
 
@@ -97,6 +99,34 @@ import { RouterLink } from '@angular/router';
                     <li class="flex items-center"><span class="mr-2">✓</span> Email/Google login</li>
                     <li class="flex items-center"><span class="mr-2">✓</span> Global leaderboard</li>
                     <li class="flex items-center"><span class="mr-2">✓</span> Cloud sync across devices</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- What's New -->
+              <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                  <span class="text-3xl mr-3">🆕</span> What's New
+                </h2>
+
+                <!-- Bird Characters -->
+                <div class="mb-6">
+                  <h3 class="text-lg font-semibold text-gray-800 mb-4">New Bird Characters</h3>
+                  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div *ngFor="let bird of birdCharacters" class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                      <span class="text-3xl">{{ bird.icon }}</span>
+                      <h4 class="font-semibold text-gray-900 mt-2">{{ bird.name }}</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Improvements -->
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-3">Latest Improvements</h3>
+                  <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Improved bird animation system</li>
+                    <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Enhanced bird selection in settings</li>
+                    <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Gameplay and UI improvements</li>
                   </ul>
                 </div>
               </div>
@@ -187,7 +217,7 @@ import { RouterLink } from '@angular/router';
       <!-- Footer -->
       <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-          <p class="text-gray-400">© 2024 Vikram. All rights reserved.</p>
+          <p class="text-gray-400">© 2025 Vikram. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -202,7 +232,15 @@ import { RouterLink } from '@angular/router';
   `]
 })
 export class Flap3Component {
+  birdCharacters = [
+    { icon: '🐤', name: 'Classic Bird' },
+    { icon: '🦅', name: 'Heavy Hawk' },
+    { icon: '🐦', name: 'Swift Swallow' },
+    { icon: '🦉', name: 'Barn Owl' }
+  ];
+
   features = [
+    { icon: '🐦', title: 'Multiple Bird Characters', description: 'Choose from Classic Bird, Heavy Hawk, Swift Swallow & Barn Owl' },
     { icon: '🎨', title: 'Low-Poly 3D Graphics', description: 'Beautiful cartoon-style visuals with depth parallax' },
     { icon: '☁️', title: 'Cloud Score Sync', description: 'Your scores sync across all devices' },
     { icon: '🏆', title: 'Global Leaderboard', description: 'Compete with players worldwide' },

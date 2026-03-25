@@ -114,7 +114,7 @@ interface App {
       <!-- Footer -->
       <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-          <p class="text-gray-400">© 2024 Vikram. All rights reserved.</p>
+          <p class="text-gray-400">© 2025 Vikram. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -171,7 +171,7 @@ export class MyappsComponent {
       description: 'A modern 3D vertical endless runner inspired by classic side-scrolling mechanics, with online features, cloud score sync, and offline play support.',
       image: 'assets/images/logos/logo.png',
       platform: 'Android',
-      status: 'Coming Soon',
+      status: 'Live',
       features: ['3D Graphics', 'Cloud Sync', 'Leaderboards', 'Offline Play']
     }
   ];

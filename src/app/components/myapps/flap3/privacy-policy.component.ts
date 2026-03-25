@@ -134,7 +134,39 @@ import { RouterLink } from '@angular/router';
               </section>
 
               <section>
-                <h2 class="text-xl font-bold text-gray-900 mb-3">6. Third-Party Services</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">6. Advertising</h2>
+                <p class="text-gray-600 leading-relaxed">
+                  Flap 3 displays rewarded video advertisements through Google AdMob. These ads are optional
+                  and shown only when you choose to watch them in exchange for in-game rewards.
+                </p>
+
+                <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">6.1 Data Collected by AdMob</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  Google AdMob may collect the following information to serve personalized ads:
+                </p>
+                <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                  <li>Device identifiers (Advertising ID)</li>
+                  <li>IP address</li>
+                  <li>Device information (model, OS version)</li>
+                  <li>App usage data</li>
+                  <li>Location data (if permitted)</li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">6.2 Ad Personalization</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  You can opt out of personalized advertising by adjusting your device settings:
+                </p>
+                <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                  <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
+                </ul>
+                <p class="text-gray-600 leading-relaxed mt-2">
+                  For more information, please review
+                  <a href="https://policies.google.com/technologies/ads" target="_blank" class="text-primary hover:underline">Google's Advertising Policy</a>.
+                </p>
+              </section>
+
+              <section>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">7. Third-Party Services</h2>
                 <p class="text-gray-600 leading-relaxed">
                   We use the following third-party services:
                 </p>
@@ -143,6 +175,7 @@ import { RouterLink } from '@angular/router';
                   <li><strong>Cloud Firestore:</strong> For storing game data and leaderboards</li>
                   <li><strong>Firebase Analytics:</strong> For usage analytics</li>
                   <li><strong>Google Sign-In:</strong> For optional social authentication</li>
+                  <li><strong>Google AdMob:</strong> For displaying rewarded video advertisements</li>
                 </ul>
                 <p class="text-gray-600 leading-relaxed mt-2">
                   These services have their own privacy policies. We encourage you to review 
@@ -151,7 +184,7 @@ import { RouterLink } from '@angular/router';
               </section>
 
               <section>
-                <h2 class="text-xl font-bold text-gray-900 mb-3">7. Children's Privacy</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">8. Children's Privacy</h2>
                 <p class="text-gray-600 leading-relaxed">
                   Flap 3 is intended for general audiences. We do not knowingly collect personal 
                   information from children under 13 years of age. If we discover that a child under 
@@ -161,7 +194,7 @@ import { RouterLink } from '@angular/router';
               </section>
 
               <section>
-                <h2 class="text-xl font-bold text-gray-900 mb-3">8. Your Data Rights</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">9. Your Data Rights</h2>
                 <p class="text-gray-600 leading-relaxed">
                   You have the following rights regarding your data:
                 </p>
@@ -177,7 +210,7 @@ import { RouterLink } from '@angular/router';
               </section>
 
               <section>
-                <h2 class="text-xl font-bold text-gray-900 mb-3">9. Data Retention</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">10. Data Retention</h2>
                 <p class="text-gray-600 leading-relaxed">
                   We retain your personal information for as long as your account is active or as 
                   needed to provide you services. If you delete your account, we will delete your 
@@ -186,7 +219,7 @@ import { RouterLink } from '@angular/router';
               </section>
 
               <section>
-                <h2 class="text-xl font-bold text-gray-900 mb-3">10. Changes to This Policy</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">11. Changes to This Policy</h2>
                 <p class="text-gray-600 leading-relaxed">
                   We may update this Privacy Policy from time to time. We will notify you of any 
                   changes by posting the new Privacy Policy on this page and updating the "Last updated" 
@@ -195,7 +228,7 @@ import { RouterLink } from '@angular/router';
               </section>
 
               <section>
-                <h2 class="text-xl font-bold text-gray-900 mb-3">11. Contact Us</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">12. Contact Us</h2>
                 <p class="text-gray-600 leading-relaxed">
                   If you have any questions or concerns about this Privacy Policy or our data practices, 
                   please contact us at:
@@ -217,7 +250,7 @@ import { RouterLink } from '@angular/router';
       <!-- Footer -->
       <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-          <p class="text-gray-400">© 2024 Vikram. All rights reserved.</p>
+          <p class="text-gray-400">© 2025 Vikram. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -232,5 +265,5 @@ import { RouterLink } from '@angular/router';
   `]
 })
 export class Flap3PrivacyPolicyComponent {
-  lastUpdated = 'February 22, 2026';
+  lastUpdated = 'March 25, 2026';
 }
